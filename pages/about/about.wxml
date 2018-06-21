@@ -1,0 +1,34 @@
+<view class='headline'>
+  <view>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+  </view>
+  <view class='title'>
+    <view class='brief'>公司简介</view>
+    <view>公司的发展历程、获得荣誉以及联系方式</view>
+  </view>
+</view>
+
+<view class='list'>
+  <view>
+    <view class='brief2'>关于我们</view>
+    <view class='text'>瓢城旅行社旅游网创立于2006年10月，以“让旅游更简单”为使命，为消费者提供由北京、上海、广州、深圳等64个城市出发的旅游产品预订服务，产品全面，价格透明，全年365天24小时400电话预订，并提供丰富的后续服务和保障。</view>
+    <view class='text'>目前，瓢城旅行社旅游网提供8万余种旅游产品供消费者选择，涵盖跟团、自助、自驾、邮轮、酒店、签证、景区门票以及公司旅游等，已成功服务累计超过400万人次出游。</view>
+    <view class='text'>同时基于瓢城旅行社旅游网全球中文景点目录以及中文旅游社区，可以更好地帮助游客了解目的地信息，妥善制定好出游计划，并方便地预订旅程中的服务项目。</view>
+  </view>
+  <view class='brief2'>联系我们</view>
+  <view class='address'>
+    <view>瓢城旅行社股份有限公司</view>
+    <view>地址：江苏省盐城市亭湖区大庆中路1234号</view>
+    <view>邮编：1234567</view>
+    <view>电话：010-88888888</view>
+    <view>传真：010-88666666</view>
+  </view>
+</view>
+
+  <!-- 底部 -->
+  <view class='bottom'>
+    <view>客户端 | 触屏版 | 电脑版</view>
+    <view>Copyright © YCKU 瓢城旅行社 | 苏ICP备120110119号</view>
+  </view>
+
+

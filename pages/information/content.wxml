@@ -1,0 +1,38 @@
+<!--pages/information/content.wxml-->
+<view class='container' style='bottom:{{bottom}}'>
+  <view class='content'>
+    <view class='video'>
+      <video autoplay controls show-center-play-btn bindplay='startPlay' bindpause='closePlay' src='http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4'></video>
+    </view>
+    <view class='content_comment'>
+      <view class='title'>
+        <text>1，如何从普通消费者升级为代理商？请看下面的视频操作了。\n</text>
+        <text>33万次播放</text>
+      </view>
+      <!-- 评论区 -->
+      <view class='comment_container'>
+        <view class='clearfix' wx:for="{{commentList}}" wx:key='{{index}}'>
+          <view class='pic'><image  mode='widthFix' src='../../image/information/picture.png'></image></view>
+          <view class='detail'>
+            <view class='head clearfix'>
+              <view class='name'>{{item.name}}</view>
+              <view class='praise flex_vertical'>
+                <text>{{item.praise}}</text><image bindtap='toPraise' data-sub='{{index}}'  mode='widthFix' src='../../image/information/praise.png'></image>
+              </view>
+            </view>
+            <view class='comment_content'>{{item.content}}</view>
+            <view class='comment_time'>{{item.time}}分钟前</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部评论 -->
+  <view class='btm_comment flex_vertical'>
+    <image mode='widthFix' src='../../image/information/left.png'></image>
+    <input type='text' value='{{inputContent}}' bindinput="initContent" bindfocus='showInput' bindblur='defaultInput' type='text' cursor-spacing='20' adjust-position= 'true'></input>
+    <text bindtap = "sendText">我说两句</text>
+  </view>
+
+</view>

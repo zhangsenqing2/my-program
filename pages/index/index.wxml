@@ -1,0 +1,54 @@
+<!--index.wxml-->
+ <view class="container" style='width:100%;position:relative;'> 
+  <!-- <view class="userinfo"> -->
+  
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+   <!--wx:if,else  -->
+    <!-- <block wx:else> -->
+      <!--bindtap:事件绑定函数  -->
+      <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+    <!-- <text class='head_title'>学的不仅是技术，更是梦想！</text> 
+    </view> -->
+  <view style='position:relative;top:0px;'>
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+      <block wx:for="{{imgUrls}}"  wx:key="key">
+        <swiper-item>
+          <image src="{{item.img}}" class="slide-image" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="usermotto">
+    <view>
+      <text class="title">{{motto}}</text>
+      <text class='detail'>{{mottoDetail}}</text>
+    </view>
+    <view class='clearfix'>
+      <view class='tour' wx:for="{{tourList}}" wx:key="key">
+        <view class='tour_image'>
+          <image src='{{item.tour_image}}' mode='widthFix' bindtap='goDetail'></image>
+        </view>
+        <view class=''>
+          <text class='ellipse'>{{item.detail1}}</text>
+          <text class='ellipse'>{{item.detail2}}</text>
+        </view>
+        <view class='info clearfix'>
+          <text>￥<text class='strong'>{{item.strong}}</text>起</text>
+          <text>满意度 {{item.manyi}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部 -->
+  <view class='bottom'>
+    <view>客户端 | 触屏版 | 电脑版</view>
+    <view>Copyright © YCKU 瓢城旅行社 | 苏ICP备120110119号</view>
+  </view>
+ </view> 
+
+
+

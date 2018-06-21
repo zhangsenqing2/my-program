@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/information/content",
+    "pages/index/index",
+    
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/scenery/scenery"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00afa1",
+    "navigationBarTitleText": "前端日刊",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": "50"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index.png"
+      },
+      {
+        "pagePath": "pages/information/content",
+        "text": "资讯",
+        "iconPath": "image/detail.png",
+        "selectedIconPath": "image/detail.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "image/detail.png",
+        "selectedIconPath": "image/detail.png"
+      }
+    ],
+    "selectedColor": "#00afa1",
+    "position": "top"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
